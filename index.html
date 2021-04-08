@@ -1,0 +1,221 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+   <meta charset="utf-8">
+   <title>MTA: Играть в GTA Онлайн | Скачать МТА | Resident RP </title>
+   <link rel="stylesheet" href="css/main.css">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js">  </script>
+   
+</head>
+
+<body>
+   <section class="main">
+      <div class="index_bg index">
+         <div class="bg1"></div>
+         <div class="mainContent">
+            <!-- <header> -->
+            <div class="header">
+               <ul class="main-menu">
+                  <li><a href="#">Главная</a></li>
+                  <li><a href="#">О проекте</a></li>
+                  <li><a href="#">Правила игры</a></li>
+                  <li><a href="#">Форум</a></li>
+                  <li><a href="#">Игровой магазин</a></li>
+               </ul>
+            </div>
+            <!-- </header> -->
+
+         </div>
+
+
+         <div class="context" style="display: none;">
+            <div class="pre">
+               <div class="joing">
+                  <span class="go">Начни игру на просторах России уже сейчас! 🔥</span>
+                  <div class="btn">
+                     <button id="tags">Выбор игроков</button>
+                     <button id="tags">Игровой режим</button>
+                  </div>
+               </div>
+
+               <h2 class="go">Станьте частью нашего проекта. Вступайте во фракции, банды, отыгрывайте сообственные роли.
+                  Role Play игра на Резиденции - основа основ!</h2>
+               <div class="sbtn">
+                  <button id="download">Скачать игру</button>
+                  <button id="aboutserver">Подробнее о проекте</button>
+               </div>
+               <div class="system">
+                  <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" id="checkmark"
+                     clip-rule="evenodd">
+                     <path d="M21 6.285l-11.16 12.733-6.84-6.018 1.319-1.49 5.341 4.686 9.865-11.196 1.475 1.285z" />
+                  </svg>
+                  <h3>Начать играть можно на Windows 7 и выше</h3> <br>
+                  <a href="#" id="systemRequirements">Показать системные требования...</a> <br>
+                  <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" id="checkmark"
+                     clip-rule="evenodd">
+                     <path d="M21 6.285l-11.16 12.733-6.84-6.018 1.319-1.49 5.341 4.686 9.865-11.196 1.475 1.285z" />
+                  </svg>
+                  <h3>Игра без вирусов</h3>
+               </div>
+            </div>
+
+
+            <div class="vidos">
+               <!-- <iframe src="video/nfg.webm" type="video/webm" autoplay allow="autoplay" id = "myVideo"  frameborder="0" border="0" cellspacing="0"  style="border-style: none;width: 100%; height: auto;"
+               ></iframe> -->
+               <video muted autoplay loop id="myVideo" allow="autoplay"> -->
+                  <!-- <source src="video/nfs.mp4" type="video/mp4" > -->
+                  <source src="video/nfg.webm" type="video/webm">
+               </video>
+            </div>
+         </div>
+
+         <div class="howSTART _anim-items">
+            <div class="howMainLeft">
+               <div class="howStart">
+                  <p id="howHead">Как начать играть?</p>
+                  <div class="howContent">
+                     <!-- <h3></h3> -->
+                     <span class="howhs">
+                        Первый шаг
+                     </span>
+                     <div class="box">
+                        Если Вы уже предустановили наш игровой клиент, необходимо открыть игру, нажать вкладку «Подключение» и
+                        выбрать интересующий Вас игровой сервер
+                     </div>
+                     <p class="how">Если же Вы до сих пор не сделали этого, нажмите на кнопку</p>
+                     <span class = "downloadClient_button">Загрузить клиент</span>
+                     <div id="box2">
+
+                     </div>
+                     <!-- <div class="vidos">
+                        <video muted autoplay loop id="myVideo" allow="autoplay"> 
+                           <source src="video/nfg.webm" type="video/webm">
+                        </video>
+                     </div> -->
+                  </div>
+               </div>
+            </div>
+            
+            <div class="howMainCenter">
+               <div class="cycle"></div>
+               <div class="line"></div>
+               <div class="cycle"></div>
+            </div>
+            
+            <div class="howMainRight">
+               <div id ="box3"></div>
+               <span class="howhs">
+                  Второй шаг
+               </span>
+               <div class="msg">
+                  <span class = "howText">Пройдите регистрацию через удобную 
+                     панель, создайте своего уникального персонажа</span>
+                     <br>
+                     <br>
+                     <span class = "howText">Пройдите регистрацию через удобную 
+                        панель, создайте своего уникального персонажа</span>
+               </div>
+               <span class = "rulesButton">Правила</span>
+            </div>
+         </div>
+         <footer id = "index">
+            <div class="copyright">
+               Resedint RolePlay © 2019-2021 г.
+            </div>
+          </footer>
+      </section> <!--  END MainContent -->
+      
+      
+      <!-- style="display: none;" -->
+
+      <div class="modalContainer" style="display: none;">
+         <div class="modalGroup">
+            <div class="modalRequire">
+               <h2>Системные требования</h2>
+               <div class="selectRequire">
+                  <div class="hernya full" id="st1"></div>
+                  <div class="hernya" id="st2"></div>
+                  <div class="hernya" id="st3"></div>
+                  <span id="hernyaText" value="Минимальные"> Минимальные требования для игры </span>
+                  <!-- <span class = "hernyaSelect" style="display: none;" > Минимальные </span> -->
+                  <span class="hernyaSelect">Средние</span>
+                  <span class="hernyaSelect">Высокие</span>
+               </div>
+               <table>
+                  <tr>
+                     <td>Операционная система <span id="black">Windows 7 (с обновлениями и драйверами) </span> </td>
+                     <td>Процессор <span id="black"> Intel Core 2 Duo (2.2 GHz) / AMD AMD Phenom (2.2 GHz) </span>
+                     </td>
+                     <td>Оперативная память <span id="black"> 4 Gb DDR3 </span></td>
+                     <td>Видеопамять <span id="black"> GeForce GTX 550 TI (1 Gb) / Radeon HD 4800 (1 Gb) </span></td>
+                     <td>Разрешение экрана <span id="black"> 1280х720 </span></td>
+                     <td>Жесткий диск <span id="black"> 10 GB свободного места </span></td>
+                     <td>Скорость интернета <span id="black"> 15 Mbit/s </span></td>
+                  </tr>
+               </table>
+            <button id = "closed" onclick="closeSub($('.modalContainer'))"  >Закрыть</button>
+            </div>
+         </div>
+      </div>
+
+      <div class="modalDownload">
+         <div class="modalGroup" id = "downloading">
+            <div class="modalRequire">
+               <h2>Скачать игру сможет каждый</h2>
+               <div class="header3">
+                  <span class="lbText">Загрузите инсталлятор нашего клиента с удобного файлообменника</span>
+                  <img src="img/papka.png" alt="" id = "imgDownload"> 
+               </div>
+               <div class="headPrew">
+                  <div class="prew">
+                     <div id ="block4"></div>
+                     <span id = "blockdownload">Скачать</span>
+                  </div>
+                  <div class="prew">
+                     <div id ="block4"></div>
+                     <span id = "blockdownload">Скачать</span>
+                  </div>
+                  <div class="prew">
+                     <div id ="block4"></div>
+                     <span id = "blockdownload">Скачать</span>
+                  </div>
+               </div>
+               
+                  <div class="predTable">
+                     <table id = "tblDownload">
+                        <tr>
+                           <td>Операционная система <span id="black">Windows 7 (с обновлениями и драйверами) </span> </td>
+                        </tr>
+                     </table>
+                  </div>
+                  <div id="center">
+                     <button id = "closed" onclick=" closeSub($('.modalDownload'));"  >Закрыть</button>
+                  </div>
+               
+              
+               
+               <!-- <span id = "reqDownload"></span> -->
+              
+               <!-- <div class="prew">
+                  <div id ="block4"></div>
+                  <span id = "blockdownload">Скачать</span>
+               </div>
+               <div class="prew">
+                  <div id ="block4"></div>
+                  <span id = "blockdownload">Скачать</span>
+               </div> -->
+            
+            </div>
+      </div>
+
+   </div>
+   
+   
+
+   <script src="js/scripts.js"></script>
+</body>
+
+</html>
