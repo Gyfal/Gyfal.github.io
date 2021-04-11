@@ -21,7 +21,7 @@ if (animItems.length > 0) {
       var animItem = animItems[index];
       var animItemHeight = animItem.offsetHeight;
       var animItemOffset = offset(animItem).top;
-      var animStart = 2;
+      var animStart = 8;
       var animItemPoint = window.innerHeight - animItemHeight / animStart;
 
       if (animItemHeight > window.innerHeight) {
@@ -43,6 +43,7 @@ if (animItems.length > 0) {
     var top = elementBoundary.top; // var bottom = elementBoundary.bottom;
 
     var height = elementBoundary.height; // alert(top + height >= 0)
+    // alert(top - height)
 
     return {
       top: top - height

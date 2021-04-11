@@ -154,6 +154,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-bottom: 290px;
 }
 
 h1.go {
@@ -501,7 +502,7 @@ span.hernyaSelect {
   width: 100%;
   position: absolute;
   /* overflow-x: hidden; ???  */
-  height: 882px;
+  height: 1080px;
   top: 0;
   min-width: 900px;
 }
@@ -541,13 +542,11 @@ button#closed {
   /* max-width: 1920px;*/
   max-height: 785px;
   min-height: 600px;
-  /* max-width: 424px; */
-  margin-top: 220px;
-  /* padding-top: 50px; */
-  /* width: 1920px; */
+
+  /* margin-top: 220px; */
+
   background-color: white;
-  /* display: block; */
-  /* text-align: -webkit-center; */
+
 }
 
 
