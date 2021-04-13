@@ -1,4 +1,4 @@
-﻿
+
 var settings = []
 settings['Минимальные'] = 1;
 settings['Средние'] = 2; 
@@ -56,6 +56,25 @@ if (animItems.length > 0) {
     }
 }
 
+
+
+let posX = null, posY = null;
+let distanceX = 0, distanceY = 0;
+const screenshot = document.getElementsByClassName('vidos')[0];
+const rotateX = 5, rotateY = -12, rotate = 7;
+let degX = 0, degY = 0;
+document.addEventListener('mousemove', (event) => {
+	// first event, start pos
+	if(posX === null && posY === null) {
+		posX = event.clientX;
+		posY = event.clientY;
+	}
+	distanceX = event.clientX - posX;
+	distanceY = event.clientY - posY;
+	degX = rotateX + (distanceY * 0.01);
+	degY = rotateY + (distanceX * 0.01);
+	screenshot.style.transform = `rotateX(${degX}deg) rotateY(${degY}deg) rotate(${rotate}deg)`
+});
 
 
 
